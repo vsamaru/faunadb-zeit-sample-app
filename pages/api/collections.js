@@ -1,11 +1,9 @@
 import faunadb, { query as q } from 'faunadb';
 
-const { FAUNADB_SECRET: secret } = process.env;
 
-let client;
 
 if (secret) {
-  client = new faunadb.Client({ secret });
+  client = new faunadb.Client({ "fnADn_Db5fACAuIxN4ElHl_KcZfmVA6ayTIZrpc9" });
 }
 
 export default async (req, res) => {
